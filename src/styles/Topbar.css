@@ -1,0 +1,33 @@
+.top-bar {
+  height: var(--nav-height);
+  background: var(--card-background);
+  box-shadow: var(--card-elevation);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--spacing-md);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-brand {
+  font-size: 1.25rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0 var(--spacing-sm);
+  }
+} 

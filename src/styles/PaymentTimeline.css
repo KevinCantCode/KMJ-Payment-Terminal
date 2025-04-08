@@ -1,0 +1,73 @@
+.payment-timeline {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  box-shadow: var(--card-shadow);
+}
+
+.timeline-container {
+  display: flex;
+  gap: var(--spacing-md);
+  overflow-x: auto;
+  padding: var(--spacing-sm) 0;
+  margin-top: var(--spacing-sm);
+}
+
+.timeline-week {
+  min-width: 200px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.timeline-date {
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.timeline-payments {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.timeline-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.timeline-payment:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.employee-name {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.payment-amount {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    flex-direction: column;
+  }
+  
+  .timeline-week {
+    min-width: 100%;
+  }
+} 

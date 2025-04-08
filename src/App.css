@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: var(--nav-height);
+  margin-left: var(--sidebar-width);
+  padding: 0;
+  overflow: auto;
+  width: calc(100% - var(--sidebar-width));
+  box-sizing: border-box;
+}
+
+/* Responsive styles for the layout */
+@media (max-width: 768px) {
+  .main-content {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+}

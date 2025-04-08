@@ -1,0 +1,47 @@
+.wallet-connection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--card-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.wallet-address {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.wallet-balance {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.connect-btn,
+.disconnect-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.connect-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.disconnect-btn {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.disconnect-btn:hover {
+  background-color: var(--danger-color-hover);
+} 

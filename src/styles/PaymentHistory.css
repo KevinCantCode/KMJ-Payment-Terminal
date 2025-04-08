@@ -1,0 +1,138 @@
+.payment-history-page {
+  padding: var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.payment-history-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-title {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.payment-history-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--card-shadow);
+  width: 100%;
+}
+
+.payments-table-container {
+  overflow-x: auto;
+}
+
+.payments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-md);
+}
+
+.payments-table th,
+.payments-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.payments-table th {
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--card-bg);
+}
+
+.payments-table th:last-child {
+  text-align: right;
+  padding-right: var(--spacing-lg);
+}
+
+.payment-row {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.payment-row:hover {
+  background: var(--hover-color);
+}
+
+.payment-row:active {
+  background: var(--active-color);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  min-width: 100px;
+}
+
+.status-badge.completed {
+  background: #10B981;
+  color: white;
+}
+
+.status-badge.pending {
+  background: #F59E0B;
+  color: white;
+}
+
+.status-badge.failed {
+  background: #EF4444;
+  color: white;
+}
+
+.actions-cell {
+  text-align: right;
+  padding-right: var(--spacing-lg);
+}
+
+.action-icon {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.action-icon:hover {
+  color: var(--primary-color);
+  background: var(--hover-color);
+}
+
+.view-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: var(--text-secondary);
+}
+
+.error-message {
+  background: var(--error-color);
+  color: white;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+}
+
+.no-data-message {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+} 
